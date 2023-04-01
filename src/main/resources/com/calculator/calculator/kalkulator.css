@@ -1,0 +1,12 @@
+.brojNijeIspravan {
+ -fx-background-color: lightpink;
+}
+.brojIspravan {
+ -fx-background-color: yellowgreen;
+}
+.unosNijeIspravan {
+ -fx-background-color: lightpink;
+}
+.unosIspravan {
+ -fx-background-color: yellowgreen;
+}

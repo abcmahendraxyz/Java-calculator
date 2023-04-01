@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<GridPane alignment="CENTER" hgap="10.0" prefHeight="220.0" prefWidth="193.0" vgap="16.0" xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.calculator.calculator.Controller">
+    <stylesheets>
+        <URL value="@kalkulator.css" />
+    </stylesheets>
+
+    <columnConstraints>
+        <ColumnConstraints hgrow="ALWAYS" />
+        <ColumnConstraints hgrow="ALWAYS" />
+        <ColumnConstraints hgrow="ALWAYS" />
+        <ColumnConstraints hgrow="ALWAYS" />
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints vgrow="ALWAYS" />
+        <RowConstraints vgrow="ALWAYS" />
+        <RowConstraints vgrow="ALWAYS" />
+        <RowConstraints vgrow="ALWAYS" />
+        <RowConstraints vgrow="ALWAYS" />
+        <RowConstraints vgrow="ALWAYS" />
+    </rowConstraints>
+
+    <children>
+        <Label id="display" fx:id="display" maxHeight="1.7976931348623157E308" maxWidth="Infinity" text="${controller.labela}"  GridPane.columnSpan="4">
+            <font>
+                <Font size="14.0" />
+            </font>
+            <GridPane.margin>
+                <Insets />
+            </GridPane.margin></Label>
+        <Button id="divisionButton" fx:id="divBtn" maxWidth="Infinity" mnemonicParsing="false" onAction="#divAction" prefHeight="26.0" prefWidth="54.0" text="/" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+        <Button id="modButton" fx:id="modBtn" maxWidth="Infinity" mnemonicParsing="false" onAction="#modAction" prefHeight="26.0" prefWidth="51.0" text="\%" GridPane.hgrow="ALWAYS" GridPane.rowIndex="1" />
+        <Button id="multiplicationButton" fx:id="mulBtn" maxWidth="Infinity" mnemonicParsing="false" onAction="#mulAction" prefHeight="26.0" prefWidth="53.0" text="x" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+        <Button id="btn7" fx:id="btn7" maxWidth="Infinity" mnemonicParsing="false" onAction="#sevenClick" prefHeight="26.0" prefWidth="51.0" text="7" GridPane.rowIndex="2" />
+        <Button id="btn8" fx:id="btn8" maxWidth="Infinity" mnemonicParsing="false" onAction="#eightClick" prefHeight="26.0" prefWidth="54.0" text="8" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+        <Button id="btn9" fx:id="btn9" maxWidth="Infinity" mnemonicParsing="false" onAction="#nineClick" prefHeight="26.0" prefWidth="53.0" text="9" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+        <Button id="substractionButton" fx:id="minBtn" maxWidth="Infinity" mnemonicParsing="false" onAction="#subAction" prefHeight="26.0" prefWidth="50.0" text="-" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+        <Button id="plusBtn" fx:id="plusBtn" maxHeight="1.7976931348623157E308" maxWidth="Infinity" mnemonicParsing="false" onAction="#addAction" prefHeight="75.0" prefWidth="38.0" text="+" GridPane.columnIndex="3" GridPane.rowIndex="2" GridPane.rowSpan="2" />
+        <Button id="btn4" fx:id="btn4" maxWidth="Infinity" mnemonicParsing="false" onAction="#fourClick" prefHeight="26.0" prefWidth="52.0" text="4" GridPane.rowIndex="3" />
+        <Button id="btn5" fx:id="btn5" maxWidth="Infinity" mnemonicParsing="false" onAction="#fiveClick" prefHeight="26.0" prefWidth="55.0" text="5" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+        <Button id="btn6" fx:id="btn6" maxWidth="Infinity" mnemonicParsing="false" onAction="#sixClick" prefHeight="26.0" prefWidth="53.0" text="6" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+        <Button id="btn1" fx:id="btn1" maxWidth="Infinity" mnemonicParsing="false" onAction="#oneClick" prefHeight="26.0" prefWidth="51.0" text="1" GridPane.rowIndex="4" />
+        <Button id="btn2" fx:id="btn2" maxWidth="Infinity" mnemonicParsing="false" onAction="#twoClick" prefHeight="26.0" prefWidth="55.0" text="2" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+        <Button id="btn3" fx:id="btn3" maxWidth="Infinity" mnemonicParsing="false" onAction="#threeClick" prefHeight="26.0" prefWidth="53.0" text="3" GridPane.columnIndex="2" GridPane.rowIndex="4" />
+        <Button id="btn0" fx:id="btn0" maxWidth="Infinity" mnemonicParsing="false" onAction="#zeroClick" prefHeight="26.0" prefWidth="116.0" text="0" GridPane.columnSpan="2" GridPane.rowIndex="5" />
+        <Button id="dotBtn" fx:id="dotBtn" maxWidth="Infinity" mnemonicParsing="false" onAction="#pointClick" prefHeight="26.0" prefWidth="53.0" text="." GridPane.columnIndex="2" GridPane.rowIndex="5" />
+        <Button id="equalsBtn" fx:id="equalsBtn" maxHeight="1.7976931348623157E308" maxWidth="Infinity" mnemonicParsing="false" onAction="#equalsAction" prefHeight="67.0" prefWidth="84.0" text="=" GridPane.columnIndex="3" GridPane.rowIndex="4" GridPane.rowSpan="2" />
+    </children>
+    <padding>
+        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+    </padding>
+</GridPane>
