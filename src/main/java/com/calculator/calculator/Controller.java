@@ -6,11 +6,13 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
+import javafx.scene.text.TextAlignment;
 
 public class Controller {
     @FXML
     public Label display;
     public Button equalsBtn;
+    public Button btn0, btn1, btn2, btn3, btn4, btn5, btn6, btn7, btn8, btn9, minBtn, plusBtn ;
     private String result = "";
     private String firstOperand = "";
     private String secondOperand = "";
@@ -31,6 +33,7 @@ public class Controller {
     @FXML
     public void initialize() {
         display.getStyleClass().add("brojIspravan");
+
         equalsBtn.getStyleClass().add("unosNijeIspravan");
         display.textProperty().addListener(new ChangeListener<String>() {
             @Override

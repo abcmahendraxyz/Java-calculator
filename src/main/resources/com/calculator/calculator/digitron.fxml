@@ -34,14 +34,18 @@
             </font>
             <GridPane.margin>
                 <Insets />
-            </GridPane.margin></Label>
+            </GridPane.margin>
+            <padding>
+                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+            </padding>
+        </Label>
         <Button id="divisionButton" fx:id="divBtn" maxWidth="Infinity" mnemonicParsing="false" onAction="#divAction" prefHeight="26.0" prefWidth="54.0" text="/" GridPane.columnIndex="1" GridPane.rowIndex="1" />
         <Button id="modButton" fx:id="modBtn" maxWidth="Infinity" mnemonicParsing="false" onAction="#modAction" prefHeight="26.0" prefWidth="51.0" text="\%" GridPane.hgrow="ALWAYS" GridPane.rowIndex="1" />
         <Button id="multiplicationButton" fx:id="mulBtn" maxWidth="Infinity" mnemonicParsing="false" onAction="#mulAction" prefHeight="26.0" prefWidth="53.0" text="x" GridPane.columnIndex="2" GridPane.rowIndex="1" />
         <Button id="btn7" fx:id="btn7" maxWidth="Infinity" mnemonicParsing="false" onAction="#sevenClick" prefHeight="26.0" prefWidth="51.0" text="7" GridPane.rowIndex="2" />
         <Button id="btn8" fx:id="btn8" maxWidth="Infinity" mnemonicParsing="false" onAction="#eightClick" prefHeight="26.0" prefWidth="54.0" text="8" GridPane.columnIndex="1" GridPane.rowIndex="2" />
         <Button id="btn9" fx:id="btn9" maxWidth="Infinity" mnemonicParsing="false" onAction="#nineClick" prefHeight="26.0" prefWidth="53.0" text="9" GridPane.columnIndex="2" GridPane.rowIndex="2" />
-        <Button id="substractionButton" fx:id="minBtn" maxWidth="Infinity" mnemonicParsing="false" onAction="#subAction" prefHeight="26.0" prefWidth="50.0" text="-" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+        <Button id="subtractionButton" fx:id="minBtn" maxWidth="Infinity" mnemonicParsing="false" onAction="#subAction" prefHeight="26.0" prefWidth="50.0" text="-" GridPane.columnIndex="3" GridPane.rowIndex="1" />
         <Button id="plusBtn" fx:id="plusBtn" maxHeight="1.7976931348623157E308" maxWidth="Infinity" mnemonicParsing="false" onAction="#addAction" prefHeight="75.0" prefWidth="38.0" text="+" GridPane.columnIndex="3" GridPane.rowIndex="2" GridPane.rowSpan="2" />
         <Button id="btn4" fx:id="btn4" maxWidth="Infinity" mnemonicParsing="false" onAction="#fourClick" prefHeight="26.0" prefWidth="52.0" text="4" GridPane.rowIndex="3" />
         <Button id="btn5" fx:id="btn5" maxWidth="Infinity" mnemonicParsing="false" onAction="#fiveClick" prefHeight="26.0" prefWidth="55.0" text="5" GridPane.columnIndex="1" GridPane.rowIndex="3" />
@@ -54,6 +58,6 @@
         <Button id="equalsBtn" fx:id="equalsBtn" maxHeight="1.7976931348623157E308" maxWidth="Infinity" mnemonicParsing="false" onAction="#equalsAction" prefHeight="67.0" prefWidth="84.0" text="=" GridPane.columnIndex="3" GridPane.rowIndex="4" GridPane.rowSpan="2" />
     </children>
     <padding>
-        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
     </padding>
 </GridPane>
